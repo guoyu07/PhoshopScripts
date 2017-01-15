@@ -1,0 +1,331 @@
+
+// =======================================================
+var idOpn = charIDToTypeID( "Opn " );
+    var desc1 = new ActionDescriptor();
+    var idnull = charIDToTypeID( "null" );
+    desc1.putPath( idnull, new File( "C:\\Users\\Administrator\\Desktop\\IMG_20170108_101301.jpg" ) );
+executeAction( idOpn, desc1, DialogModes.NO );
+
+// =======================================================
+var idCpTL = charIDToTypeID( "CpTL" );
+executeAction( idCpTL, undefined, DialogModes.NO );
+
+// =======================================================
+var idnewPlacedLayer = stringIDToTypeID( "newPlacedLayer" );
+executeAction( idnewPlacedLayer, undefined, DialogModes.NO );
+
+// =======================================================
+var idMsc = charIDToTypeID( "Msc " );
+    var desc2 = new ActionDescriptor();
+    var idClSz = charIDToTypeID( "ClSz" );
+    var idPxl = charIDToTypeID( "#Pxl" );
+    desc2.putUnitDouble( idClSz, idPxl, 30.000000 );
+executeAction( idMsc, desc2, DialogModes.NO );
+
+// =======================================================
+var idMk = charIDToTypeID( "Mk  " );
+    var desc3 = new ActionDescriptor();
+    var idnull = charIDToTypeID( "null" );
+        var ref1 = new ActionReference();
+        var idcontentLayer = stringIDToTypeID( "contentLayer" );
+        ref1.putClass( idcontentLayer );
+    desc3.putReference( idnull, ref1 );
+    var idUsng = charIDToTypeID( "Usng" );
+        var desc4 = new ActionDescriptor();
+        var idType = charIDToTypeID( "Type" );
+            var desc5 = new ActionDescriptor();
+            var idPtrn = charIDToTypeID( "Ptrn" );
+                var desc6 = new ActionDescriptor();
+                var idNm = charIDToTypeID( "Nm  " );
+                desc6.putString( idNm, "图案 1" );
+                var idIdnt = charIDToTypeID( "Idnt" );
+                desc6.putString( idIdnt, "44308c41-dac8-11e6-82d2-9fbcd07e628d" );
+            var idPtrn = charIDToTypeID( "Ptrn" );
+            desc5.putObject( idPtrn, idPtrn, desc6 );
+        var idpatternLayer = stringIDToTypeID( "patternLayer" );
+        desc4.putObject( idType, idpatternLayer, desc5 );
+    var idcontentLayer = stringIDToTypeID( "contentLayer" );
+    desc3.putObject( idUsng, idcontentLayer, desc4 );
+executeAction( idMk, desc3, DialogModes.NO );
+
+// =======================================================
+var idMk = charIDToTypeID( "Mk  " );
+    var desc7 = new ActionDescriptor();
+    var idnull = charIDToTypeID( "null" );
+        var ref2 = new ActionReference();
+        var idcontentLayer = stringIDToTypeID( "contentLayer" );
+        ref2.putClass( idcontentLayer );
+    desc7.putReference( idnull, ref2 );
+    var idUsng = charIDToTypeID( "Usng" );
+        var desc8 = new ActionDescriptor();
+        var idType = charIDToTypeID( "Type" );
+            var desc9 = new ActionDescriptor();
+            var idPtrn = charIDToTypeID( "Ptrn" );
+                var desc10 = new ActionDescriptor();
+                var idNm = charIDToTypeID( "Nm  " );
+                desc10.putString( idNm, "图案 1" );
+                var idIdnt = charIDToTypeID( "Idnt" );
+                desc10.putString( idIdnt, "9bc2d280-dac8-11e6-82d2-9fbcd07e628d" );
+            var idPtrn = charIDToTypeID( "Ptrn" );
+            desc9.putObject( idPtrn, idPtrn, desc10 );
+        var idpatternLayer = stringIDToTypeID( "patternLayer" );
+        desc8.putObject( idType, idpatternLayer, desc9 );
+    var idcontentLayer = stringIDToTypeID( "contentLayer" );
+    desc7.putObject( idUsng, idcontentLayer, desc8 );
+executeAction( idMk, desc7, DialogModes.NO );
+
+// =======================================================
+var idsetd = charIDToTypeID( "setd" );
+    var desc11 = new ActionDescriptor();
+    var idnull = charIDToTypeID( "null" );
+        var ref3 = new ActionReference();
+        var idLyr = charIDToTypeID( "Lyr " );
+        var idOrdn = charIDToTypeID( "Ordn" );
+        var idTrgt = charIDToTypeID( "Trgt" );
+        ref3.putEnumerated( idLyr, idOrdn, idTrgt );
+    desc11.putReference( idnull, ref3 );
+    var idT = charIDToTypeID( "T   " );
+        var desc12 = new ActionDescriptor();
+        var idMd = charIDToTypeID( "Md  " );
+        var idBlnM = charIDToTypeID( "BlnM" );
+        var idlinearLight = stringIDToTypeID( "linearLight" );
+        desc12.putEnumerated( idMd, idBlnM, idlinearLight );
+    var idLyr = charIDToTypeID( "Lyr " );
+    desc11.putObject( idT, idLyr, desc12 );
+executeAction( idsetd, desc11, DialogModes.NO );
+
+// =======================================================
+var idMk = charIDToTypeID( "Mk  " );
+    var desc13 = new ActionDescriptor();
+    var idnull = charIDToTypeID( "null" );
+        var ref4 = new ActionReference();
+        var idAdjL = charIDToTypeID( "AdjL" );
+        ref4.putClass( idAdjL );
+    desc13.putReference( idnull, ref4 );
+    var idUsng = charIDToTypeID( "Usng" );
+        var desc14 = new ActionDescriptor();
+        var idType = charIDToTypeID( "Type" );
+            var desc15 = new ActionDescriptor();
+            var idLvls = charIDToTypeID( "Lvls" );
+            desc15.putInteger( idLvls, 4 );
+        var idPstr = charIDToTypeID( "Pstr" );
+        desc14.putObject( idType, idPstr, desc15 );
+    var idAdjL = charIDToTypeID( "AdjL" );
+    desc13.putObject( idUsng, idAdjL, desc14 );
+executeAction( idMk, desc13, DialogModes.NO );
+
+// =======================================================
+var idmove = charIDToTypeID( "move" );
+    var desc16 = new ActionDescriptor();
+    var idnull = charIDToTypeID( "null" );
+        var ref5 = new ActionReference();
+        var idLyr = charIDToTypeID( "Lyr " );
+        var idOrdn = charIDToTypeID( "Ordn" );
+        var idTrgt = charIDToTypeID( "Trgt" );
+        ref5.putEnumerated( idLyr, idOrdn, idTrgt );
+    desc16.putReference( idnull, ref5 );
+    var idT = charIDToTypeID( "T   " );
+        var ref6 = new ActionReference();
+        var idLyr = charIDToTypeID( "Lyr " );
+        ref6.putIndex( idLyr, 2 );
+    desc16.putReference( idT, ref6 );
+    var idAdjs = charIDToTypeID( "Adjs" );
+    desc16.putBoolean( idAdjs, false );
+    var idVrsn = charIDToTypeID( "Vrsn" );
+    desc16.putInteger( idVrsn, 5 );
+executeAction( idmove, desc16, DialogModes.NO );
+
+// =======================================================
+var idsetd = charIDToTypeID( "setd" );
+    var desc17 = new ActionDescriptor();
+    var idnull = charIDToTypeID( "null" );
+        var ref7 = new ActionReference();
+        var idLyr = charIDToTypeID( "Lyr " );
+        var idOrdn = charIDToTypeID( "Ordn" );
+        var idTrgt = charIDToTypeID( "Trgt" );
+        ref7.putEnumerated( idLyr, idOrdn, idTrgt );
+    desc17.putReference( idnull, ref7 );
+    var idT = charIDToTypeID( "T   " );
+        var desc18 = new ActionDescriptor();
+        var idMd = charIDToTypeID( "Md  " );
+        var idBlnM = charIDToTypeID( "BlnM" );
+        var idLmns = charIDToTypeID( "Lmns" );
+        desc18.putEnumerated( idMd, idBlnM, idLmns );
+    var idLyr = charIDToTypeID( "Lyr " );
+    desc17.putObject( idT, idLyr, desc18 );
+executeAction( idsetd, desc17, DialogModes.NO );
+
+// =======================================================
+var idMk = charIDToTypeID( "Mk  " );
+    var desc19 = new ActionDescriptor();
+    var idnull = charIDToTypeID( "null" );
+        var ref8 = new ActionReference();
+        var idcontentLayer = stringIDToTypeID( "contentLayer" );
+        ref8.putClass( idcontentLayer );
+    desc19.putReference( idnull, ref8 );
+    var idUsng = charIDToTypeID( "Usng" );
+        var desc20 = new ActionDescriptor();
+        var idType = charIDToTypeID( "Type" );
+            var desc21 = new ActionDescriptor();
+            var idClr = charIDToTypeID( "Clr " );
+                var desc22 = new ActionDescriptor();
+                var idRd = charIDToTypeID( "Rd  " );
+                desc22.putDouble( idRd, 255.000000 );
+                var idGrn = charIDToTypeID( "Grn " );
+                desc22.putDouble( idGrn, 63.750973 );
+                var idBl = charIDToTypeID( "Bl  " );
+                desc22.putDouble( idBl, 63.750973 );
+            var idRGBC = charIDToTypeID( "RGBC" );
+            desc21.putObject( idClr, idRGBC, desc22 );
+        var idsolidColorLayer = stringIDToTypeID( "solidColorLayer" );
+        desc20.putObject( idType, idsolidColorLayer, desc21 );
+    var idcontentLayer = stringIDToTypeID( "contentLayer" );
+    desc19.putObject( idUsng, idcontentLayer, desc20 );
+executeAction( idMk, desc19, DialogModes.NO );
+
+// =======================================================
+var idsetd = charIDToTypeID( "setd" );
+    var desc23 = new ActionDescriptor();
+    var idnull = charIDToTypeID( "null" );
+        var ref9 = new ActionReference();
+        var idLyr = charIDToTypeID( "Lyr " );
+        var idOrdn = charIDToTypeID( "Ordn" );
+        var idTrgt = charIDToTypeID( "Trgt" );
+        ref9.putEnumerated( idLyr, idOrdn, idTrgt );
+    desc23.putReference( idnull, ref9 );
+    var idT = charIDToTypeID( "T   " );
+        var desc24 = new ActionDescriptor();
+        var idMd = charIDToTypeID( "Md  " );
+        var idBlnM = charIDToTypeID( "BlnM" );
+        var idStrt = charIDToTypeID( "Strt" );
+        desc24.putEnumerated( idMd, idBlnM, idStrt );
+    var idLyr = charIDToTypeID( "Lyr " );
+    desc23.putObject( idT, idLyr, desc24 );
+executeAction( idsetd, desc23, DialogModes.NO );
+
+// =======================================================
+var idslct = charIDToTypeID( "slct" );
+    var desc25 = new ActionDescriptor();
+    var idnull = charIDToTypeID( "null" );
+        var ref10 = new ActionReference();
+        var idLyr = charIDToTypeID( "Lyr " );
+        ref10.putName( idLyr, "色调分离 1" );
+    desc25.putReference( idnull, ref10 );
+    var idMkVs = charIDToTypeID( "MkVs" );
+    desc25.putBoolean( idMkVs, false );
+executeAction( idslct, desc25, DialogModes.NO );
+
+// =======================================================
+var idsetd = charIDToTypeID( "setd" );
+    var desc26 = new ActionDescriptor();
+    var idnull = charIDToTypeID( "null" );
+        var ref11 = new ActionReference();
+        var idLyr = charIDToTypeID( "Lyr " );
+        var idOrdn = charIDToTypeID( "Ordn" );
+        var idTrgt = charIDToTypeID( "Trgt" );
+        ref11.putEnumerated( idLyr, idOrdn, idTrgt );
+    desc26.putReference( idnull, ref11 );
+    var idT = charIDToTypeID( "T   " );
+        var desc27 = new ActionDescriptor();
+        var idMd = charIDToTypeID( "Md  " );
+        var idBlnM = charIDToTypeID( "BlnM" );
+        var idNrml = charIDToTypeID( "Nrml" );
+        desc27.putEnumerated( idMd, idBlnM, idNrml );
+    var idLyr = charIDToTypeID( "Lyr " );
+    desc26.putObject( idT, idLyr, desc27 );
+executeAction( idsetd, desc26, DialogModes.NO );
+
+// =======================================================
+var idsetd = charIDToTypeID( "setd" );
+    var desc28 = new ActionDescriptor();
+    var idnull = charIDToTypeID( "null" );
+        var ref12 = new ActionReference();
+        var idLyr = charIDToTypeID( "Lyr " );
+        var idOrdn = charIDToTypeID( "Ordn" );
+        var idTrgt = charIDToTypeID( "Trgt" );
+        ref12.putEnumerated( idLyr, idOrdn, idTrgt );
+    desc28.putReference( idnull, ref12 );
+    var idT = charIDToTypeID( "T   " );
+        var desc29 = new ActionDescriptor();
+        var idMd = charIDToTypeID( "Md  " );
+        var idBlnM = charIDToTypeID( "BlnM" );
+        var idLmns = charIDToTypeID( "Lmns" );
+        desc29.putEnumerated( idMd, idBlnM, idLmns );
+    var idLyr = charIDToTypeID( "Lyr " );
+    desc28.putObject( idT, idLyr, desc29 );
+executeAction( idsetd, desc28, DialogModes.NO );
+
+// =======================================================
+var idslct = charIDToTypeID( "slct" );
+    var desc30 = new ActionDescriptor();
+    var idnull = charIDToTypeID( "null" );
+        var ref13 = new ActionReference();
+        var idChnl = charIDToTypeID( "Chnl" );
+        var idChnl = charIDToTypeID( "Chnl" );
+        var idRGB = charIDToTypeID( "RGB " );
+        ref13.putEnumerated( idChnl, idChnl, idRGB );
+    desc30.putReference( idnull, ref13 );
+    var idMkVs = charIDToTypeID( "MkVs" );
+    desc30.putBoolean( idMkVs, false );
+executeAction( idslct, desc30, DialogModes.NO );
+
+// =======================================================
+var idsetd = charIDToTypeID( "setd" );
+    var desc31 = new ActionDescriptor();
+    var idnull = charIDToTypeID( "null" );
+        var ref14 = new ActionReference();
+        var idAdjL = charIDToTypeID( "AdjL" );
+        var idOrdn = charIDToTypeID( "Ordn" );
+        var idTrgt = charIDToTypeID( "Trgt" );
+        ref14.putEnumerated( idAdjL, idOrdn, idTrgt );
+    desc31.putReference( idnull, ref14 );
+    var idT = charIDToTypeID( "T   " );
+        var desc32 = new ActionDescriptor();
+        var idLvls = charIDToTypeID( "Lvls" );
+        desc32.putInteger( idLvls, 5 );
+    var idPstr = charIDToTypeID( "Pstr" );
+    desc31.putObject( idT, idPstr, desc32 );
+executeAction( idsetd, desc31, DialogModes.NO );
+
+// =======================================================
+var idslct = charIDToTypeID( "slct" );
+    var desc33 = new ActionDescriptor();
+    var idnull = charIDToTypeID( "null" );
+        var ref15 = new ActionReference();
+        var idLyr = charIDToTypeID( "Lyr " );
+        ref15.putName( idLyr, "颜色填充 1" );
+    desc33.putReference( idnull, ref15 );
+    var idMkVs = charIDToTypeID( "MkVs" );
+    desc33.putBoolean( idMkVs, false );
+executeAction( idslct, desc33, DialogModes.NO );
+
+// =======================================================
+var idsave = charIDToTypeID( "save" );
+    var desc34 = new ActionDescriptor();
+    var idAs = charIDToTypeID( "As  " );
+        var desc35 = new ActionDescriptor();
+        var idEQlt = charIDToTypeID( "EQlt" );
+        desc35.putInteger( idEQlt, 8 );
+        var idMttC = charIDToTypeID( "MttC" );
+        var idMttC = charIDToTypeID( "MttC" );
+        var idNone = charIDToTypeID( "None" );
+        desc35.putEnumerated( idMttC, idMttC, idNone );
+    var idJPEG = charIDToTypeID( "JPEG" );
+    desc34.putObject( idAs, idJPEG, desc35 );
+    var idIn = charIDToTypeID( "In  " );
+    desc34.putPath( idIn, new File( "D:\\jsx\\ps" ) );
+    var idCpy = charIDToTypeID( "Cpy " );
+    desc34.putBoolean( idCpy, true );
+executeAction( idsave, desc34, DialogModes.NO );
+
+// =======================================================
+var idCls = charIDToTypeID( "Cls " );
+    var desc36 = new ActionDescriptor();
+    var idSvng = charIDToTypeID( "Svng" );
+    var idYsN = charIDToTypeID( "YsN " );
+    var idN = charIDToTypeID( "N   " );
+    desc36.putEnumerated( idSvng, idYsN, idN );
+executeAction( idCls, desc36, DialogModes.NO );
+
+
+
